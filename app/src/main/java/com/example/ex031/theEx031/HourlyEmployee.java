@@ -10,8 +10,31 @@ public class HourlyEmployee extends Employee{
         this.hourlyRate = hourlyRate;
     }
 
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
+
+    public double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    public void setHourlyRate(double hourlyRate) {
+        this.hourlyRate = hourlyRate;
+    }
+
     @Override
     public double calculateMonthlySalary() {
         return hoursWorked * hourlyRate;
+    }
+
+    @Override
+    public String toString() {
+        return "HourlyEmployee{" + "\n" +
+                super.toString() +
+                '}';
     }
 }
