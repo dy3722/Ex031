@@ -16,7 +16,7 @@ public class Main {
         for (Employee employee : allEmployees)
         {
             System.out.println(employee);
-            employee.calculateMonthlySalary();
+            System.out.println(employee.calculateMonthlySalary());
         }
 
         double totalBonuses = 0;
